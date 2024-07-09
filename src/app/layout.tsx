@@ -1,6 +1,7 @@
 import type {Metadata} from "next"
 import {Lexend} from "next/font/google"
 import "./globals.css"
+import {cookies} from "next/headers"
 
 const inter = Lexend({subsets: ["latin"]})
 
@@ -20,8 +21,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const cookieStore = cookies()
+  const theme = cookieStore.get("theme")?.value === "dark" ? "dark" : ""
   return (
-    <html lang="en">
+    <html lang="en" className={theme}>
       <body className={inter.className}>{children}</body>
     </html>
   )

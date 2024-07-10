@@ -29,3 +29,16 @@ html {
   background: #eeff37;
   border-radius: 10px;
 }
+
+.p-tabview-nav {
+  justify-content: center;
+}
+
+.p-tabview-selected {
+  text-decoration: underline;
+  text-decoration-color: #eeff37;
+}
+
+.p-tabview-selected a {
+  padding-bottom: 10px;
+}

@@ -1,5 +1,5 @@
-export {Header} from "./header/Header"
 export {DarkMode} from "./darkMode/DarkMode"
+export {Header} from "./header/Header"
 export {Footer} from "./footer/Footer"
 //info
 export {Intro} from "./info/Intro"

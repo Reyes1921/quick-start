@@ -1,32 +1,33 @@
 import {TabView, TabPanel} from "primereact/tabview"
+import {Clipboard} from "../clipboard/Clipboard"
 
 export const Intro = () => {
   return (
-    <div className="p-5">
-      <h2 className="px-5 text-4xl font-bold text-txtColor">Intro</h2>
+    <div className="p-2 py-0 md:p-5">
+      <h2 className="p-2 md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+        Comenzar el proyecto
+      </h2>
       <div className="card">
-        <TabView className="">
+        <TabView className="font-sans">
           <TabPanel header="React">
-            <p className="m-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <Clipboard defaultValue={"npm create vite@latest"} />
+            <div className="py-3 md:p-4">
+              {" "}
+              Quitar todo el contenido de los archivos{" "}
+              <span className="text-txtColor">App.css</span> y{" "}
+              <span className="text-txtColor">index.css</span> y remover los
+              elementos del primer div en en{" "}
+              <span className="text-txtColor">App.tsx</span>.
+            </div>
           </TabPanel>
           <TabPanel header="Next">
-            <p className="m-0">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
-              velit, sed quia non numquam eius modi.
-            </p>
+            <Clipboard defaultValue={"npx create-next-app@latest"} />
+            <div className="py-3 md:p-4">
+              Quitar todo el contenido de los archivos{" "}
+              <span className="text-txtColor">globals.css</span> y remover el
+              contenido del main en{" "}
+              <span className="text-txtColor">page.tsx</span>.
+            </div>
           </TabPanel>
         </TabView>
       </div>

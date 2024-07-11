@@ -13,7 +13,7 @@ const config: Config = {
       txtColor: "#eeff37",
     },
     fontFamily: {
-      sans: ["Lexend", "sans-serif"],
+      sans: ["__Lexend_866216", "sans-serif"],
     },
     extend: {
       backgroundImage: {

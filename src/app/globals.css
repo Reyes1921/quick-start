@@ -14,6 +14,10 @@ html {
   /* scrollbar-color: #eeff37 #051623; */
 }
 
+* {
+  font-family: "__Lexend_866216", sans-serif;
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 16px;

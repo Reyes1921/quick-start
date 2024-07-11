@@ -1,4 +1,4 @@
-import {Intro, Color, Favicon, Letra, Layaout} from "./components"
+import {Intro, Color, Favicon, Letra, Layaout, Idioma} from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
 import "primereact/resources/themes/lara-dark-cyan/theme.css"
@@ -7,6 +7,7 @@ import {IoIosColorPalette} from "react-icons/io"
 import {TbFavicon} from "react-icons/tb"
 import {FaFont} from "react-icons/fa"
 import {TbRulerMeasure} from "react-icons/tb"
+import {FaLanguage} from "react-icons/fa"
 
 export default function Home() {
   return (
@@ -89,6 +90,21 @@ export default function Home() {
               }
             >
               <Layaout />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="border-2 border-[white] rounded-full p-3">
+                    <FaLanguage className="text-txtColor text-lg" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    Language
+                  </span>
+                  <Badge value="6" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <Idioma />
             </AccordionTab>
           </Accordion>
         </div>

@@ -25,9 +25,8 @@ export const Layaout = () => {
             </p>
             <textarea
               rows={19}
-              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
-            >
-              {`import {Header, Footer} from "../components/"
+              readOnly
+              defaultValue={`import {Header, Footer} from "../components/"
 
 type Props = {
   children: React.ReactNode
@@ -45,17 +44,19 @@ const Layout = ({children}: Props) => {
 
 export default Layout
 `}
-            </textarea>
+              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
+            />
+
             <p>Y usarlo asi en donde se pueda</p>
             <textarea
               rows={4}
-              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
-            >
-              {`<Layout>
+              readOnly
+              defaultValue={`<Layout>
     <main className="p-2 min-h-[calc(100vh_-_15vh)] w-full md:max-w-[1000px] mx-auto px-10 md:p-x10 md:py-2 "></main>
 </Layout>
 `}
-            </textarea>
+              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
+            />
           </div>
         </TabPanel>
         <TabPanel header="Next.Js">
@@ -69,9 +70,8 @@ export default Layout
             </p>
             <textarea
               rows={18}
-              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
-            >
-              {`export default function RootLayout({
+              readOnly
+              defaultValue={`export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
@@ -89,14 +89,15 @@ export default Layout
   )
 }
 `}
-            </textarea>
+              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
+            />
             <p>Y usar medidas asi en donde se pueda</p>
             <textarea
               rows={3}
+              readOnly
+              defaultValue={` <main className="flex min-h-[calc(100vh_-_14vh)] md:min-h-[calc(100vh_-_18.4vh)] flex-col items-center justify-between px-12 md:px-20 py-10 bg-[white] dark:bg-bgColor"></main>`}
               className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
-            >
-              {` <main className="flex min-h-[calc(100vh_-_14vh)] md:min-h-[calc(100vh_-_18.4vh)] flex-col items-center justify-between px-12 md:px-20 py-10 bg-[white] dark:bg-bgColor"></main>`}
-            </textarea>
+            />
           </div>
         </TabPanel>
       </TabView>

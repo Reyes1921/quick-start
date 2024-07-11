@@ -4,11 +4,12 @@ import {useRef, useState} from "react"
 
 interface propType {
   defaultValue: string
+  rows?: number
 }
 
 export function Clipboard(value: propType) {
   const [copySuccess, setCopySuccess] = useState("")
-  const inputRef = useRef<HTMLInputElement | null>(null)
+  const inputRef = useRef<HTMLTextAreaElement | null>(null)
 
   const copyToClipboard = () => {
     if (inputRef.current) {
@@ -19,11 +20,11 @@ export function Clipboard(value: propType) {
     }
   }
   return (
-    <div className="relative">
-      <input
-        type="text"
+    <div className="relative m-4">
+      <textarea
         ref={inputRef}
-        defaultValue={`${value.defaultValue}`}
+        rows={!value.rows ? 1 : value.rows}
+        defaultValue={value.defaultValue}
         readOnly={true}
         className="h-auto min-h-10 clipboard w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none duration-200 selection:bg-transparent focus:border-primary"
       />

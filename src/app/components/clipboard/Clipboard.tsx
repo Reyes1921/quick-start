@@ -20,7 +20,7 @@ export function Clipboard(value: propType) {
     }
   }
   return (
-    <div className="relative m-4">
+    <div className="relative">
       <textarea
         ref={inputRef}
         rows={!value.rows ? 1 : value.rows}

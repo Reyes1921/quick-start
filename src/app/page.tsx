@@ -1,4 +1,4 @@
-import {Intro, Color, Favicon, Footer, Header, Letra} from "./components"
+import {Intro, Color, Favicon, Letra, Layaout} from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
 import "primereact/resources/themes/lara-dark-cyan/theme.css"
@@ -6,12 +6,12 @@ import {FaRocket} from "react-icons/fa"
 import {IoIosColorPalette} from "react-icons/io"
 import {TbFavicon} from "react-icons/tb"
 import {FaFont} from "react-icons/fa"
+import {TbRulerMeasure} from "react-icons/tb"
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between px-12 md:px-20 py-10 bg-[white] dark:bg-bgColor">
+      <main className="flex min-h-[calc(100vh_-_15vh)] md:min-h-[calc(100vh_-_20h)] flex-col items-center justify-between px-12 md:px-20 py-10 bg-[white] dark:bg-bgColor">
         <div className="w-full">
           {/* activeIndex={[0]} */}
           <Accordion multiple>
@@ -75,10 +75,24 @@ export default function Home() {
             >
               <Letra />
             </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="border-2 border-[white] rounded-full p-3">
+                    <TbRulerMeasure className="text-txtColor text-lg" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    Layout
+                  </span>
+                  <Badge value="5" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <Layaout />
+            </AccordionTab>
           </Accordion>
         </div>
       </main>
-      <Footer />
     </>
   )
 }

@@ -6,7 +6,7 @@ import {
   Layaout,
   Idioma,
   Css,
-  Ceo,
+  Seo,
   HeaderT,
   DarkModeT,
   FooterT,
@@ -138,13 +138,13 @@ export default function Home() {
                     <MdOutlineQueryStats className="text-txtColor text-3xl" />
                   </div>
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
-                    CEO
+                    SEO
                   </span>
                   <Badge value="8" className="ml-auto bg-txtColor text-lg" />
                 </span>
               }
             >
-              <Ceo />
+              <Seo />
             </AccordionTab>
             <AccordionTab
               header={

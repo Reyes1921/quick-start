@@ -1,4 +1,4 @@
-import {Intro, Color, Favicon, Letra, Layaout, Idioma} from "./components"
+import {Intro, Color, Favicon, Letra, Layaout, Idioma, Css} from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
 import "primereact/resources/themes/lara-dark-cyan/theme.css"
@@ -8,6 +8,7 @@ import {TbFavicon} from "react-icons/tb"
 import {FaFont} from "react-icons/fa"
 import {TbRulerMeasure} from "react-icons/tb"
 import {FaLanguage} from "react-icons/fa"
+import {FaCss3Alt} from "react-icons/fa"
 
 export default function Home() {
   return (
@@ -19,9 +20,7 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <FaRocket className="text-txtColor text-lg" />
-                  </div>
+                  <FaRocket className="text-txtColor text-2xl" />
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Intro
                   </span>
@@ -34,9 +33,8 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <IoIosColorPalette className="text-txtColor text-xl" />
-                  </div>
+                  <IoIosColorPalette className="text-txtColor text-3xl" />
+
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Colors
                   </span>
@@ -49,9 +47,8 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <TbFavicon className="text-txtColor text-xl" />
-                  </div>
+                  <TbFavicon className="text-txtColor text-3xl" />
+
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Favicon
                   </span>
@@ -64,9 +61,8 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <FaFont className="text-txtColor text-lg" />
-                  </div>
+                  <FaFont className="text-txtColor text-2xl" />
+
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Fonts
                   </span>
@@ -79,9 +75,7 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <TbRulerMeasure className="text-txtColor text-lg" />
-                  </div>
+                  <TbRulerMeasure className="text-txtColor text-xl" />
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Layout
                   </span>
@@ -94,9 +88,7 @@ export default function Home() {
             <AccordionTab
               header={
                 <span className="flex items-center gap-2 w-full">
-                  <div className="border-2 border-[white] rounded-full p-3">
-                    <FaLanguage className="text-txtColor text-lg" />
-                  </div>
+                  <FaLanguage className="text-txtColor text-3xl" />
                   <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                     Language
                   </span>
@@ -105,6 +97,21 @@ export default function Home() {
               }
             >
               <Idioma />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <FaCss3Alt className="text-txtColor text-3xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    CSS
+                  </span>
+                  <Badge value="7" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <Css />
             </AccordionTab>
           </Accordion>
         </div>

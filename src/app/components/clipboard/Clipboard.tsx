@@ -30,7 +30,7 @@ export function Clipboard(value: propType) {
       />
       <button
         onClick={copyToClipboard}
-        className="absolute right-0 top-0 flex h-10 w-14 items-center justify-end p-2 text-body-color duration-200 hover:text-primary"
+        className="absolute right-0 top-0 flex h-10 w-14 items-center justify-end p-2 md:mr-3 text-body-color duration-200 hover:text-primary"
       >
         {copySuccess ? (
           <svg

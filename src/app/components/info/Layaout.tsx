@@ -3,10 +3,12 @@ import {TabPanel, TabView} from "primereact/tabview"
 export const Layaout = () => {
   return (
     <div className="p-2 py-0 md:p-5">
+      <h2 className="md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+        Definir Layout
+      </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
         <p>
-          Definir el <span className="text-txtColor">layout</span> en general ya
-          sea <span className="text-txtColor">paddings</span>,{" "}
+          Ya sea <span className="text-txtColor">paddings</span>,{" "}
           <span className="text-txtColor">margins</span> y{" "}
           <span className="text-txtColor">colores de fondo</span>, contando la
           parte <span className="text-txtColor">responsive</span>.

@@ -79,6 +79,59 @@ export default i18n
             </p>
             <Clipboard defaultValue={`import "./i18n`} />
             <p>
+              Ahora implementamos el botón en el componente del{" "}
+              <span className="text-txtColor">Header</span> agregamos lo
+              siguiente ya que tenemos que implementar que se guarde en el{" "}
+              <span className="text-txtColor">localStorage</span> y todas las
+              validaciones que eso implica:
+            </p>
+            <Clipboard
+              rows={30}
+              defaultValue={`export const Header = () => {
+  const {i18n} = useTranslation()
+  const options = ["en", "es"]
+  const [value, setValue] = useState<string>(options[0])
+  const onChangeLang = (e: SelectButtonChangeEvent) => {
+    const lang_code = e.target.value
+    i18n.changeLanguage(lang_code)
+    setValue(e.target.value)
+    localStorage.setItem("language", e.target.value)
+  }
+
+  useEffect(() => {
+    const lang = localStorage.getItem("language") as string
+    if (!!lang) {
+      i18n.changeLanguage(lang)
+      setValue(lang)
+    }
+  }, [])
+
+  return (
+    <header className="w-full md:max-w-[1000px] mx-auto">
+      <div className="flex justify-between items-center px-10 flex-col md:flex-row py-6 md:p-5">
+        <div className="md:ml-10">
+          <h1 className="text-center md:text-left text-xl md:text-2xl font-bold text-black dark:text-white pb-5 md:pb-0">
+            Image Color Detector
+          </h1>
+        </div>
+
+        <div className="flex md:mr-5">
+          <nav className="flex justify-end items-center mr-3">
+            <SelectButton
+              value={value}
+              onChange={onChangeLang}
+              options={options}
+            />
+          </nav>
+          <DarkMode />
+        </div>
+      </div>
+    </header>
+  )
+}
+              `}
+            />
+            <p>
               Ahora para traducir el contenido se usa{" "}
               <span className="text-txtColor">useTranslation</span> de esta
               forma.
@@ -271,6 +324,39 @@ export default async function RootLayout({
 
 `}
               rows={25}
+            />
+            <p>
+              En el <span className="text-txtColor">header</span> bastaría
+              agregar algo asi, un <span className="text-txtColor">link</span>{" "}
+              para pasar al idioma que se quiere
+            </p>
+            <Clipboard
+              defaultValue={`return (
+            <header className="w-full fixed top-0 left-0 z-20 py-3 md:py-5 backdrop-blur-sm bg-[#67676718] dark:bg-[#67676718]">
+              <div className="flex justify-center items-center md:max-w-[850px] mx-auto px-10">
+                <nav className="mx-auto">
+                  <Nav />
+                </nav>
+                <div className="flex"></div>
+                <DarkMode />
+                <Link href={dict("path")} className="">
+                  <button className="flex items-center border-2 border-transparent rounded-xl hover:scale-110 hover:opacity-70">
+                    <Image
+                      src={dict("logo")}
+                      height={20}
+                      width={20}
+                      alt={dict("alt")}
+                      className="md:pr-1"
+                    />
+                    <span className="text-xs md:text-base font-bold hidden md:block text-black dark:text-white">
+                      {dict("title")}
+                    </span>
+                  </button>
+                </Link>
+              </div>
+            </header>
+            )`}
+              rows={22}
             />
             <p>
               Ahora para traducir el contenido se usa{" "}

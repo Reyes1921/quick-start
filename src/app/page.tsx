@@ -1,4 +1,17 @@
-import {Intro, Color, Favicon, Letra, Layaout, Idioma, Css} from "./components"
+import {
+  Intro,
+  Color,
+  Favicon,
+  Letra,
+  Layaout,
+  Idioma,
+  Css,
+  Ceo,
+  HeaderT,
+  DarkModeT,
+  FooterT,
+  Remate,
+} from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
 import "primereact/resources/themes/lara-dark-cyan/theme.css"
@@ -9,6 +22,11 @@ import {FaFont} from "react-icons/fa"
 import {TbRulerMeasure} from "react-icons/tb"
 import {FaLanguage} from "react-icons/fa"
 import {FaCss3Alt} from "react-icons/fa"
+import {MdOutlineQueryStats} from "react-icons/md"
+import {FaHeading} from "react-icons/fa"
+import {MdDarkMode} from "react-icons/md"
+import {GiBarefoot} from "react-icons/gi"
+import {GiFinishLine} from "react-icons/gi"
 
 export default function Home() {
   return (
@@ -112,6 +130,81 @@ export default function Home() {
               }
             >
               <Css />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <MdOutlineQueryStats className="text-txtColor text-3xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    CEO
+                  </span>
+                  <Badge value="8" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <Ceo />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <FaHeading className="text-txtColor text-2xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    Header
+                  </span>
+                  <Badge value="9" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <HeaderT />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <MdDarkMode className="text-txtColor text-3xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    DarkMode
+                  </span>
+                  <Badge value="10" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <DarkModeT />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <GiBarefoot className="text-txtColor text-2xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    Footer
+                  </span>
+                  <Badge value="11" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <FooterT />
+            </AccordionTab>
+            <AccordionTab
+              header={
+                <span className="flex items-center gap-2 w-full">
+                  <div className="">
+                    <GiFinishLine className="text-txtColor text-3xl" />
+                  </div>
+                  <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                    Remate
+                  </span>
+                  <Badge value="12" className="ml-auto bg-txtColor text-lg" />
+                </span>
+              }
+            >
+              <Remate />
             </AccordionTab>
           </Accordion>
         </div>

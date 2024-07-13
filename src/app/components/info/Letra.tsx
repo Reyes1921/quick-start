@@ -4,7 +4,7 @@ import {Clipboard} from "../clipboard/Clipboard"
 export const Letra = () => {
   return (
     <div className="p-0 md:p-5">
-      <h2 className="md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+      <h2 className=" font-bold md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
         Definir fuente
       </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
@@ -67,7 +67,7 @@ export const Letra = () => {
                 <span className="text-txtColor">index.css</span>
               </p>
               <div className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3">
-                {`      <h2 className="font-krona_One">
+                {`      <h2 className=" font-boldfont-krona_One">
         Definir fuente
       </h2>`}
               </div>
@@ -109,7 +109,7 @@ export const Letra = () => {
               />
               <p>Para usarlo asi</p>
               <div className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3">
-                {`      <h2 className="font-sans">
+                {`      <h2 className=" font-boldfont-sans">
         Definir fuente
       </h2>`}
               </div>

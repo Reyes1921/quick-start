@@ -3,7 +3,7 @@ import {TabPanel, TabView} from "primereact/tabview"
 export const Layaout = () => {
   return (
     <div className="p-0 md:p-5">
-      <h2 className="md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+      <h2 className=" font-bold md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
         Definir Layout
       </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
@@ -12,6 +12,12 @@ export const Layaout = () => {
           <span className="text-txtColor">margins</span> y{" "}
           <span className="text-txtColor">colores de fondo</span>, contando la
           parte <span className="text-txtColor">responsive</span>.
+        </p>
+        <p>
+          Procurar que los títulos sean en{" "}
+          <span className="text-txtColor">bold</span> y de distinto color a los
+          textos, los textos deben de tener un color mas{" "}
+          <span className="text-txtColor">opaco</span> distintos al resto.{" "}
         </p>
       </div>
       <TabView className="font-sans">

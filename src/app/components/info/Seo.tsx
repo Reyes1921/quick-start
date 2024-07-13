@@ -3,7 +3,7 @@ import {TabPanel, TabView} from "primereact/tabview"
 export const Seo = () => {
   return (
     <div className="p-0 md:p-5">
-      <h2 className="md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+      <h2 className=" font-bold md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
         Configuración del SEO
       </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">

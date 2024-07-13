@@ -3,7 +3,7 @@ import {Clipboard} from "../clipboard/Clipboard"
 export const Color = () => {
   return (
     <div className="p-0 md:p-5">
-      <h2 className="md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+      <h2 className=" font-bold md:px-5 text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
         Definir COLORES
       </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">

@@ -1,10 +1,13 @@
 "use client"
 import Image from "next/image"
-import {useEffect, useState} from "react"
+import {useContext, useEffect, useState} from "react"
 import {setCookie, getCookie, hasCookie} from "cookies-next"
+import {PrimeReactContext} from "primereact/api"
 
 export const DarkMode = () => {
   const [isDark, setIsDark] = useState(true)
+  // const {changeTheme} = useContext(PrimeReactContext)
+  // changeTheme(currentTheme: string, newTheme: string, linkElementId: string, callback: Function)
 
   const handleClick = () => {
     setIsDark(!isDark)

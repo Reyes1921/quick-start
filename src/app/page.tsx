@@ -35,6 +35,7 @@ export default function Home() {
         {/* activeIndex={[0]} */}
         <Accordion multiple>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <FaRocket className="text-txtColor text-2xl" />
@@ -48,6 +49,7 @@ export default function Home() {
             <Intro />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <IoIosColorPalette className="text-txtColor text-3xl" />
@@ -62,6 +64,7 @@ export default function Home() {
             <Color />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <TbFavicon className="text-txtColor text-3xl" />
@@ -76,6 +79,7 @@ export default function Home() {
             <Favicon />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <FaFont className="text-txtColor text-2xl" />
@@ -90,6 +94,7 @@ export default function Home() {
             <Letra />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <TbRulerMeasure className="text-txtColor text-xl" />
@@ -103,6 +108,7 @@ export default function Home() {
             <Layaout />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <FaLanguage className="text-txtColor text-3xl" />
@@ -116,6 +122,7 @@ export default function Home() {
             <Idioma />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
@@ -131,6 +138,7 @@ export default function Home() {
             <Css />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
@@ -146,6 +154,7 @@ export default function Home() {
             <Seo />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
@@ -161,6 +170,7 @@ export default function Home() {
             <HeaderT />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
@@ -176,8 +186,9 @@ export default function Home() {
             <DarkModeT />
           </AccordionTab>
           <AccordionTab
+            className="hover:bg-[#1F2937]"
             header={
-              <span className="flex items-center gap-2 w-full">
+              <span className="flex items-center gap-2 w-full bg-[#1F2937]">
                 <div className="">
                   <GiBarefoot className="text-txtColor text-2xl" />
                 </div>
@@ -191,6 +202,7 @@ export default function Home() {
             <FooterT />
           </AccordionTab>
           <AccordionTab
+            className="bg-[#1F2937]"
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">

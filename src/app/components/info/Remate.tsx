@@ -1,3 +1,5 @@
+import {Clipboard} from "../clipboard/Clipboard"
+
 export const Remate = () => {
   return (
     <div className="p-0 md:p-5">
@@ -25,6 +27,13 @@ export const Remate = () => {
               Analizar el <span className="text-txtColor">SEO</span> con la
               extension <span className="text-txtColor">Meta Explorer</span>.
             </p>
+          </li>
+          <li>
+            <p>
+              Analizar el <span className="text-txtColor">SEO</span> con este
+              código.
+            </p>
+            <Clipboard defaultValue={" npx unlighthouse --site <tu-web>"} />
           </li>
           <li>
             <p>

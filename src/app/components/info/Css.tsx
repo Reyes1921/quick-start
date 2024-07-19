@@ -14,6 +14,59 @@ export const Css = () => {
         </p>
       </div>
       <TabView className="font-sans">
+        <TabPanel header="General">
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Hover</span> effect on sibling
+                elements.
+              </p>
+            </div>
+            <Clipboard
+              defaultValue={`.box{
+    trasnsition: opacity 0.6s ease;
+}
+
+.container:hover > :not(:hover){
+    opacity: 0.4;
+}`}
+              rows={7}
+            />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Sombras</span> en imagen con
+                fondo transparente.
+              </p>
+            </div>
+            <Clipboard
+              defaultValue={`img {
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0, 0.8));
+}`}
+              rows={4}
+            />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Evita</span> brincos en tu
+                página al cargar imágenes o vídeos.
+              </p>
+            </div>
+            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                You can change the color of the text cursor of input or textarea
+                elements, to match your web page color scheme, using the
+                caret-color property.
+              </p>
+            </div>
+            <Clipboard defaultValue={`  caret-color: red;`} rows={1} />
+          </article>
+        </TabPanel>
         <TabPanel header="Scroll Bar">
           <div className=" text-center md:text-left  text-lg">
             <p>

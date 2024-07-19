@@ -11,6 +11,9 @@ import {
   DarkModeT,
   FooterT,
   Remate,
+  Package,
+  CustomJs,
+  Serverless,
 } from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
@@ -27,6 +30,9 @@ import {FaHeading} from "react-icons/fa"
 import {MdDarkMode} from "react-icons/md"
 import {GiBarefoot} from "react-icons/gi"
 import {GiFinishLine} from "react-icons/gi"
+import {FaNpm} from "react-icons/fa"
+import {IoLogoJavascript} from "react-icons/io"
+import {FaServer} from "react-icons/fa"
 
 export default function Home() {
   return (
@@ -142,12 +148,28 @@ export default function Home() {
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
+                  <IoLogoJavascript className="text-txtColor text-2xl" />
+                </div>
+                <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                  Custom Js
+                </span>
+                <Badge value="8" className="ml-auto bg-txtColor text-lg" />
+              </span>
+            }
+          >
+            <CustomJs />
+          </AccordionTab>
+          <AccordionTab
+            className="bg-[#1F2937]"
+            header={
+              <span className="flex items-center gap-2 w-full">
+                <div className="">
                   <MdOutlineQueryStats className="text-txtColor text-3xl" />
                 </div>
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   SEO
                 </span>
-                <Badge value="8" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="9" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
@@ -163,7 +185,7 @@ export default function Home() {
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   Header
                 </span>
-                <Badge value="9" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="10" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
@@ -179,7 +201,7 @@ export default function Home() {
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   DarkMode
                 </span>
-                <Badge value="10" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="11" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
@@ -195,7 +217,7 @@ export default function Home() {
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   Footer
                 </span>
-                <Badge value="11" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="12" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
@@ -211,11 +233,43 @@ export default function Home() {
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   Remate
                 </span>
-                <Badge value="12" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="13" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
             <Remate />
+          </AccordionTab>
+          <AccordionTab
+            className="bg-[#1F2937]"
+            header={
+              <span className="flex items-center gap-2 w-full">
+                <div className="">
+                  <FaServer className="text-txtColor text-3xl" />
+                </div>
+                <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                  Serverless
+                </span>
+                <Badge value="14" className="ml-auto bg-txtColor text-lg" />
+              </span>
+            }
+          >
+            <Serverless />
+          </AccordionTab>
+          <AccordionTab
+            className="bg-[#1F2937]"
+            header={
+              <span className="flex items-center gap-2 w-full">
+                <div className="">
+                  <FaNpm className="text-txtColor text-3xl" />
+                </div>
+                <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                  Package
+                </span>
+                <Badge value="15" className="ml-auto bg-txtColor text-lg" />
+              </span>
+            }
+          >
+            <Package />
           </AccordionTab>
         </Accordion>
       </div>

@@ -14,6 +14,17 @@ export const Css = () => {
         </p>
       </div>
       <TabView className="font-sans">
+        <TabPanel header="Layout">
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Evita</span> brincos en tu
+                página al cargar imágenes o vídeos.
+              </p>
+            </div>
+            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
+          </article>
+        </TabPanel>
         <TabPanel header="General">
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
@@ -36,6 +47,18 @@ export const Css = () => {
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>
+                You can change the color of the text cursor of input or textarea
+                elements, to match your web page color scheme, using the
+                caret-color property.
+              </p>
+            </div>
+            <Clipboard defaultValue={`  caret-color: red;`} rows={1} />
+          </article>
+        </TabPanel>
+        <TabPanel header="Images">
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
                 <span className="text-txtColor">Sombras</span> en imagen con
                 fondo transparente.
               </p>
@@ -47,24 +70,36 @@ export const Css = () => {
               rows={4}
             />
           </article>
+        </TabPanel>
+        <TabPanel header="Text">
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>
-                <span className="text-txtColor">Evita</span> brincos en tu
-                página al cargar imágenes o vídeos.
+                <span className="text-txtColor">Cambiar</span> color de las
+                letras dependiendo del fondo.
               </p>
             </div>
-            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
-          </article>
-          <article className="mt-5">
-            <div className=" text-center md:text-left  text-lg">
-              <p>
-                You can change the color of the text cursor of input or textarea
-                elements, to match your web page color scheme, using the
-                caret-color property.
-              </p>
-            </div>
-            <Clipboard defaultValue={`  caret-color: red;`} rows={1} />
+            <Clipboard
+              defaultValue={`:root {
+  --light: 80;
+  --threshold: 50;
+  --base-color: #e5e7eb;
+}
+
+.clipboard {
+  --switch: calc((var(--light) - var(--threshold)) * -100%);
+  color: hsl(0, 0%, var(--switch));
+  border-color: hsl(0, 0%, var(--switch));
+}`}
+              rows={11}
+            />
+            <a
+              href="https://css-tricks.com/switch-font-color-for-different-backgrounds-with-css/"
+              className="text-txtColor underline"
+              target="_blank"
+            >
+              Mas Información:
+            </a>
           </article>
         </TabPanel>
         <TabPanel header="Scroll Bar">

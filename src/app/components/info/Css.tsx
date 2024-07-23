@@ -29,6 +29,17 @@ export const Css = () => {
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>
+                <span className="text-txtColor">Se que no es de aquí</span> este
+                es un espacio en blanco de HTML.
+              </p>
+            </div>
+            <Clipboard defaultValue={`&nbsp;`} rows={1} />
+            O
+            <Clipboard defaultValue={`&#160;`} rows={1} />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
                 <span className="text-txtColor">Hover</span> effect on sibling
                 elements.
               </p>

@@ -14,17 +14,7 @@ export const Css = () => {
         </p>
       </div>
       <TabView className="font-sans">
-        <TabPanel header="Layout">
-          <article className="mt-5">
-            <div className=" text-center md:text-left  text-lg">
-              <p>
-                <span className="text-txtColor">Evita</span> brincos en tu
-                página al cargar imágenes o vídeos.
-              </p>
-            </div>
-            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
-          </article>
-        </TabPanel>
+        <TabPanel header="Layout"></TabPanel>
         <TabPanel header="General">
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
@@ -67,6 +57,40 @@ export const Css = () => {
           </article>
         </TabPanel>
         <TabPanel header="Images">
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Evita</span> brincos en tu
+                página al cargar imágenes o vídeos.
+              </p>
+            </div>
+            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">
+                  Gradiente de fondo y cambio de posición
+                </span>{" "}
+                en las imágenes.
+              </p>
+            </div>
+            <Clipboard
+              defaultValue={`.position {
+  background-position: left calc((50vw - 170px) - 340px) top;
+}
+
+.gradiente {
+  background-image: linear-gradient(
+    to right,
+    rgba(17, 11, 32, 0.829) calc((50vw - 170px) - 340px),
+    rgba(17, 11, 32, 0.829) 50%,
+    rgba(17, 11, 32, 0.829) 100%
+  );
+}`}
+              rows={11}
+            />
+          </article>
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>

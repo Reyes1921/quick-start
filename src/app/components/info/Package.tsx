@@ -9,6 +9,14 @@ export const Package = () => {
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
         <article>
           <h3 className=" font-bold text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+            Identifying and Removing Unnecessary Dependencies
+          </h3>
+          <div className="mt-2">
+            <Clipboard defaultValue={"npx depcheck"} />
+          </div>
+        </article>
+        <article>
+          <h3 className=" font-bold text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
             Installing Packages
           </h3>
           <div className="mt-2">

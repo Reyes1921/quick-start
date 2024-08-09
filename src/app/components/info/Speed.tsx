@@ -27,10 +27,7 @@ export const Speed = () => {
               <span className="text-txtColor">alt</span> por ende al{" "}
               <span className="text-txtColor">alt</span> es recomendable
               colocarle algo antes del titulo por ejemplo{" "}
-              <span className="text-txtColor">
-                "Imagen o logo de ${"titulo"}"
-              </span>
-              .
+              <span className="text-txtColor">Imagen o logo de $titulo</span>.
             </p>
           </li>
           <li className="pb-4">

@@ -40,6 +40,11 @@ export const Remate = () => {
               Analizar los archivos no usados inspeccionando la pagina y viendo
               la sección <span className="text-txtColor">Coverage</span>.
             </p>
+            <p>
+              Revisar la pagina en <span className="text-txtColor">Chrome</span>
+              , <span className="text-txtColor">FireFox</span>,{" "}
+              <span className="text-txtColor">Brave</span>, etc.
+            </p>
           </li>
         </ul>
       </div>

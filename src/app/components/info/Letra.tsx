@@ -71,6 +71,20 @@ export const Letra = () => {
         Definir fuente
       </h2>`}
               </div>
+              <p> Cómo evitar mostrar texto invisible</p>{" "}
+              <span className="text-txtColor">swap, optional o fallback</span>
+              <Clipboard
+                defaultValue={`@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format('woff2');
+  font-display: swap;
+}`}
+                rows={8}
+              />
             </div>
           </TabPanel>
           <TabPanel header="Next.Js">
@@ -113,6 +127,20 @@ export const Letra = () => {
         Definir fuente
       </h2>`}
               </div>
+              <p> Cómo evitar mostrar texto invisible</p>{" "}
+              <span className="text-txtColor">swap, optional o fallback</span>
+              <Clipboard
+                defaultValue={`@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format('woff2');
+  font-display: swap;
+}`}
+                rows={8}
+              />
             </div>
           </TabPanel>
         </TabView>

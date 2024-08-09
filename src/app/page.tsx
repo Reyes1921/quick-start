@@ -14,6 +14,7 @@ import {
   Package,
   CustomJs,
   Serverless,
+  Speed,
 } from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
@@ -33,6 +34,7 @@ import {GiFinishLine} from "react-icons/gi"
 import {FaNpm} from "react-icons/fa"
 import {IoLogoJavascript} from "react-icons/io"
 import {FaServer} from "react-icons/fa"
+import {IoIosSpeedometer} from "react-icons/io"
 
 export default function Home() {
   return (
@@ -244,12 +246,28 @@ export default function Home() {
             header={
               <span className="flex items-center gap-2 w-full">
                 <div className="">
+                  <IoIosSpeedometer className="text-txtColor text-3xl" />
+                </div>
+                <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
+                  Speed
+                </span>
+                <Badge value="14" className="ml-auto bg-txtColor text-lg" />
+              </span>
+            }
+          >
+            <Speed />
+          </AccordionTab>
+          <AccordionTab
+            className="bg-[#1F2937]"
+            header={
+              <span className="flex items-center gap-2 w-full">
+                <div className="">
                   <FaServer className="text-txtColor text-3xl" />
                 </div>
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   Serverless
                 </span>
-                <Badge value="14" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="15" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >
@@ -265,7 +283,7 @@ export default function Home() {
                 <span className="font-bold white-space-nowrap ml-2 text-txtColor font-sans">
                   Package
                 </span>
-                <Badge value="15" className="ml-auto bg-txtColor text-lg" />
+                <Badge value="16" className="ml-auto bg-txtColor text-lg" />
               </span>
             }
           >

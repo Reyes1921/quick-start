@@ -180,7 +180,7 @@ html {
 /* Firefox */
 html {
   scrollbar-width: auto;
-  /* scrollbar-color: #fc1136 #051623; */
+  /* scrollbar-color: #eeff37 #051623; */
 }
 
 * {
@@ -199,7 +199,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #fc1136;
+  background: #eeff37;
   border-radius: 10px;
 }`}
             rows={15}

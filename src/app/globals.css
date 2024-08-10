@@ -4,14 +4,14 @@
 
 :root {
   --bgColor: #051623;
-  --txtColor: #fc1136;
+  --txtColor: #eeff37;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 html {
   scrollbar-width: auto;
-  /* scrollbar-color: #fc1136 #051623; */
+  /* scrollbar-color: #eeff37 #051623; */
 }
 
 * {
@@ -30,7 +30,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #fc1136;
+  background: #eeff37;
   border-radius: 10px;
 }
 
@@ -40,7 +40,7 @@ html {
 
 .p-tabview-selected {
   text-decoration: underline;
-  text-decoration-color: #fc1136;
+  text-decoration-color: #eeff37;
   text-underline-offset: 8px;
 }
 

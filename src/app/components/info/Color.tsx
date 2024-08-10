@@ -21,7 +21,7 @@ export const Color = () => {
         <Clipboard
           defaultValue={`    colors: {
         bgColor: "#051623",
-        txtColor: "#fc1136",
+        txtColor: "#eeff37",
     },`}
           rows={4}
         />

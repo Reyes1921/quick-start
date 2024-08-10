@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     colors: {
       bgColor: "#051623",
-      txtColor: "#eeff37",
+      txtColor: "#fc1136",
     },
     fontFamily: {
       sans: ["__Lexend_866216", "sans-serif"],

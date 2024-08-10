@@ -7,7 +7,7 @@ import {Footer, Header} from "./components"
 const inter = Lexend({subsets: ["latin"]})
 
 export const metadata: Metadata = {
-  title: "Quick Start",
+  title: "English Learn",
   description: "Guide to speed up the creation of web pages",
   icons: {
     icon: "/favicon.ico",

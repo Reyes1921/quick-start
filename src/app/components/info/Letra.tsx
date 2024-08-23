@@ -12,7 +12,7 @@ export const Letra = () => {
           {" "}
           Seleccionar una fuente preferiblemente de{" "}
           <a
-            href="</a>https://fonts.google.com/"
+            href="https://fonts.google.com/"
             className="text-txtColor underline"
             target="_blank"
           >

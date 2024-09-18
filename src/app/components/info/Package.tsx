@@ -26,6 +26,19 @@ export const Package = () => {
             <Clipboard defaultValue={"npm install -g <package_name>"} />
           </div>
         </article>
+        <article>
+          <h3 className=" font-bold text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
+            Updating Packages
+          </h3>
+          <div className="mt-2">
+            <p>Local:</p>
+            <Clipboard defaultValue={"npm update <package_name>"} />
+            <p>Global:</p>
+            <Clipboard defaultValue={"npm update -g <package_name>"} />
+            <p>Check Outdated Packages:</p>
+            <Clipboard defaultValue={"npm outdated"} />
+          </div>
+        </article>
         <article className="mt-10">
           <h3 className=" font-bold text-center md:text-left text-lg md:text-2xl font-sans text-txtColor">
             How to list npm user-installed packages?

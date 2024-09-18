@@ -45,7 +45,7 @@ export const Seo = () => {
             <div className="py-3 md:px-5 text-center md:text-left  text-lg">
               <p>
                 El <span className="text-txtColor">SEO</span> en{" "}
-                <span className="text-txtColor">Next.Js</span> se coloca en el
+                <span className="text-txtColor">Next.Js</span> se coloca en el{" "}
                 <span className="text-txtColor">layout</span> principal como el{" "}
                 <span className="text-txtColor">SEO</span> general y también se
                 puede personalizar mas en los distintos{" "}

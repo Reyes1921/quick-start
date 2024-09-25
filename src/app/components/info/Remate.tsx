@@ -45,6 +45,12 @@ export const Remate = () => {
               , <span className="text-txtColor">FireFox</span>,{" "}
               <span className="text-txtColor">Brave</span>, etc.
             </p>
+            <p>
+              Revisar todas etiquetas{" "}
+              <span className="text-txtColor">{"<a>"}</span> que lleven a
+              recursos externos y asegurarse de que contengan el atributo
+              <Clipboard defaultValue={'rel="noopener noreferrer nofollow"'} />
+            </p>
           </li>
         </ul>
       </div>

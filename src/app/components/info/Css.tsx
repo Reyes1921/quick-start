@@ -105,6 +105,28 @@ export const Css = () => {
               rows={4}
             />
           </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                Color detrás de <span className="text-txtColor">imagen</span>,
+                es como un gradiente que sale detrás de la imagen pero con
+                colores de la imagen misma.
+              </p>
+            </div>
+            <Clipboard
+              defaultValue={`.overlayImg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  background: inherit;
+  filter: blur(40px) saturate(400%);
+  z-index: -1;
+}`}
+              rows={10}
+            />
+          </article>
         </TabPanel>
         <TabPanel header="Text">
           <article className="mt-5">

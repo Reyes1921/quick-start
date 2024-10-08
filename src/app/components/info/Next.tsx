@@ -28,7 +28,7 @@ export const Next = () => {
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
         <p>
           By using <span className="text-txtColor">next/dynamic</span>, the
-          header component will not be included in the page's initial JavaScript
+          header component will not be included in the pages initial JavaScript
           bundle. The page will render the Suspense fallback first, followed by
           the Header component when the Suspense boundary is resolved.
         </p>

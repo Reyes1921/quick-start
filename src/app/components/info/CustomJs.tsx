@@ -17,12 +17,27 @@ export const CustomJs = () => {
           <div className=" text-center md:text-left  text-lg">
             <article className="mt-5">
               <p>
-                <span className="text-txtColor">Js</span> para convertir textos
-                a textos amigables a las{" "}
-                <span className="text-txtColor">URLS</span>.
+                The <span className="text-txtColor">encodeURIComponent()</span>{" "}
+                function encodes a URI by replacing each instance of certain
+                characters by one, two, three, or four escape sequences
+                representing the UTF-8 encoding of the character (will only be
+                four escape sequences for characters composed of two surrogate
+                characters). Compared to encodeURI(), this function encodes more
+                characters, including those that are part of the URI syntax.
+              </p>
+              <Clipboard defaultValue={`encodeURIComponent('шеллы')`} />
+            </article>
+            <article className="mt-5">
+              <p>
+                The <span className="text-txtColor">.Intl.NumberFormat</span>{" "}
+                {""}
+                object enables language-sensitive number formatting.
               </p>
               <Clipboard
-                defaultValue={`'Text'.toLowerCase().split(" ").join("-")`}
+                rows={4}
+                defaultValue={`new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number,), 
+
+new Intl.NumberFormat("de-De").format(number),`}
               />
             </article>
             <article className="mt-5">

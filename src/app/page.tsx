@@ -17,6 +17,8 @@ import {
   Speed,
   Env,
   Next,
+  Image,
+  Button,
 } from "./components"
 import {Accordion, AccordionTab} from "primereact/accordion"
 import {Badge} from "primereact/badge"
@@ -39,6 +41,8 @@ import {FaServer} from "react-icons/fa"
 import {IoIosSpeedometer} from "react-icons/io"
 import {FaUserSecret} from "react-icons/fa"
 import {RiNextjsFill} from "react-icons/ri"
+import {FaImage} from "react-icons/fa"
+import {GiPlayButton} from "react-icons/gi"
 
 const infoAccordion = [
   {
@@ -76,6 +80,18 @@ const infoAccordion = [
     component: <Idioma />,
     icon: <FaLanguage className="text-txtColor text-2xl" />,
     number: 6,
+  },
+  {
+    name: "Button",
+    component: <Button />,
+    icon: <GiPlayButton className="text-txtColor text-2xl" />,
+    number: 7,
+  },
+  {
+    name: "Image",
+    component: <Image />,
+    icon: <FaImage className="text-txtColor text-2xl" />,
+    number: 7,
   },
   {
     name: "CSS",
@@ -157,7 +173,7 @@ export default function Home() {
       <div className="w-full">
         {/* activeIndex={[0]} */}
         <Accordion multiple>
-          {infoAccordion.map((accordion) => {
+          {infoAccordion.map((accordion, index) => {
             return (
               <AccordionTab
                 key={accordion.name}
@@ -169,7 +185,7 @@ export default function Home() {
                       {accordion.name}
                     </span>
                     <Badge
-                      value={accordion.number}
+                      value={index + 1}
                       className="ml-auto bg-txtColor text-lg"
                     />
                   </span>

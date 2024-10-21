@@ -59,6 +59,19 @@ let urlAnimate = () =>{
 urlAnimate()`}
               />
             </article>
+            <article className="mt-5">
+              <p>
+                Cuando se este utilizando un{" "}
+                <span className="text-txtColor">objeto custom</span> es decir un
+                objeto que uno mismo creo para luego hacer{" "}
+                <span className="text-txtColor">map</span> e imprimir eso es
+                bueno usar una propiedad de clase para cada elemento del objeto
+                en caso de querer algún css único para cada elemento entoces en
+                el <span className="text-txtColor">CSS</span> se pone es la
+                propiedad css y no se usan condicionales para los{" "}
+                <span className="text-txtColor">CSS</span> únicos.
+              </p>
+            </article>
           </div>
         </TabPanel>
         <TabPanel header="TypeScript">

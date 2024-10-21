@@ -19,6 +19,39 @@ export const Css = () => {
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>
+                Centers an element horizontally within its parent container.
+                Ensures that the element is positioned equidistant from both the
+                left and right sides of the container.
+              </p>
+              <Clipboard
+                defaultValue={`margin-left: auto; 
+margin-right: auto;`}
+                rows={2}
+              />
+              En <span className="text-txtColor">tailwind</span> seria asi
+              <Clipboard defaultValue={`mx-auto`} rows={1} />
+            </div>
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                Aveces esta bien usar contrast como hover en{" "}
+                <span className="text-txtColor">tailwind</span>
+              </p>
+            </div>
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                <span className="text-txtColor">Tracking</span> en{" "}
+                <span className="text-txtColor">tailwind</span> es el{" "}
+                <span className="text-txtColor">line height</span>
+              </p>
+            </div>
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
                 <span className="text-txtColor">Se que no es de aquí</span> este
                 es un espacio en blanco de HTML.
               </p>
@@ -57,15 +90,6 @@ export const Css = () => {
           </article>
         </TabPanel>
         <TabPanel header="Images">
-          <article className="mt-5">
-            <div className=" text-center md:text-left  text-lg">
-              <p>
-                <span className="text-txtColor">Evita</span> brincos en tu
-                página al cargar imágenes o vídeos.
-              </p>
-            </div>
-            <Clipboard defaultValue={`aspect-ratio: 16/9`} rows={1} />
-          </article>
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">
               <p>

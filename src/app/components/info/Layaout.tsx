@@ -21,6 +21,23 @@ export const Layaout = () => {
         </p>
       </div>
       <TabView className="font-sans">
+        <TabPanel header="General">
+          <div className="py-3 md:px-5 text-center md:text-left  text-lg">
+            <p>
+              {" "}
+              Procurar que los componentes sean agrupados en section ya que son
+              secciones de la pagina.
+            </p>
+            <textarea
+              rows={4}
+              readOnly
+              defaultValue={`<section>
+  ....
+</section>`}
+              className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
+            />
+          </div>
+        </TabPanel>
         <TabPanel header="React">
           <div className="py-3 md:px-5 text-center md:text-left  text-lg">
             <p>

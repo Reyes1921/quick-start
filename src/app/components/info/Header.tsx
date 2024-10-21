@@ -6,11 +6,14 @@ export const HeaderT = () => {
       </h2>
       <div className="py-3 md:px-5 text-center md:text-left  text-lg">
         <p>
-          Ya sea si es en <span className="text-txtColor">REACT</span> o{" "}
-          <span className="text-txtColor">Next.Js</span> se trata de que el{" "}
-          <span className="text-txtColor">header</span> tenga buenas medidas y
-          sea responsive y contenga bien los colores de darkMode,
-          preferiblemente debe de ir en algún{" "}
+          Ya sea en <span className="text-txtColor">REACT</span> o{" "}
+          <span className="text-txtColor">Next.Js</span> el{" "}
+          <span className="text-txtColor">header</span> debe de tener un{" "}
+          <span className="text-txtColor">max-width</span> para evitar que en
+          pantallas muy grandes el contenido se vaya a los lados entonces hay
+          que colocar una medida maxima que pueda tener par evitar eso se trata
+          de que el tenga buenas medidas y sea responsive y contenga bien los
+          colores de darkMode, preferiblemente debe de ir en algún{" "}
           <span className="text-txtColor">layout</span> o{" "}
           <span className="text-txtColor">tema</span> bien estructurado y
           también debe ser un <span className="text-txtColor">componente</span>,

@@ -63,6 +63,23 @@ export const FooterT = () => {
   )
 }`}
         />
+
+        <p>
+          El elemento que envuelve el{" "}
+          <span className="text-txtColor">header</span>,{" "}
+          <span className="text-txtColor">footer</span> y el contenido{" "}
+          <span className="text-txtColor">principal</span> (main) debería de
+          tener este css para hacer que el footer siempre este abajo.
+        </p>
+        <textarea
+          rows={6}
+          className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
+          defaultValue={`div {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}`}
+        />
       </div>
     </div>
   )

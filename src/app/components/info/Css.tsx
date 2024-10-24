@@ -14,7 +14,25 @@ export const Css = () => {
         </p>
       </div>
       <TabView className="font-sans">
-        <TabPanel header="Layout"></TabPanel>
+        <TabPanel header="Layout">
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                Encontrar que elemento esta haciendo{" "}
+                <span className="text-txtColor">overflow</span>.
+              </p>
+              <Clipboard
+                defaultValue={`*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: 2px solid lime;
+}`}
+                rows={6}
+              />
+            </div>
+          </article>
+        </TabPanel>
         <TabPanel header="General">
           <article className="mt-5">
             <div className=" text-center md:text-left  text-lg">

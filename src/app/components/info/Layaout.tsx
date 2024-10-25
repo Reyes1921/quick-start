@@ -36,6 +36,11 @@ export const Layaout = () => {
 </section>`}
               className="h-auto min-h-10 w-full rounded-lg bg-bgColor py-1 pl-5 pr-5 text-base outline-none my-3"
             />
+            <p>
+              Cuando se activa el hover en algún objeto ya se debería poder
+              hacer click justo al momento que ocurre la activación del hover.
+              Como lo coloque en los proyectos del portafolio.
+            </p>
           </div>
         </TabPanel>
         <TabPanel header="React">

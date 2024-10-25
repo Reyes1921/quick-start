@@ -31,6 +31,14 @@ export const Css = () => {
                 rows={6}
               />
             </div>
+            <p>
+              Para calcular el{" "}
+              <span className="text-txtColor">object-ratio</span> solo se coloca
+              las medidas que tenga el elemento y el{" "}
+              <span className="text-txtColor">width</span> en 100% también
+              cualquier cosa también hay que recordar el{" "}
+              <span className="text-txtColor">object-position</span>.
+            </p>
           </article>
         </TabPanel>
         <TabPanel header="General">
@@ -168,6 +176,36 @@ margin-right: auto;`}
 }`}
               rows={10}
             />
+          </article>
+          <article className="mt-5">
+            <div className=" text-center md:text-left  text-lg">
+              <p>
+                Algo que se puede hacer cuando se hace hover sobre un elemento
+                que adentro tiene una imagen es colocare una clase al elemento y
+                esa misma clase pero con hover a la imagen, de esa forma cuando
+                se hace hover sobre el elemento solo se hará hover sobre la
+                imagen.
+              </p>
+            </div>
+            <Clipboard
+              defaultValue={`<Card
+      className="group"
+      key={item.name}
+>
+
+<Image
+      src={item.img}
+      className='object-fill w-full border-black aspect-[16/9] rounded-b-lg ease-in-out  transition-all duration-500 group-hover:scale-110'
+/>
+              `}
+              rows={10}
+            />
+            <p>
+              En este caso se usa la clase{" "}
+              <span className="text-txtColor">group</span> en el elemento y la
+              clase <span className="text-txtColor">group-hover:scale-110</span>{" "}
+              en la imagen.
+            </p>
           </article>
         </TabPanel>
         <TabPanel header="Text">

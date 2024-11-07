@@ -22,7 +22,39 @@ export const Serverless = () => {
             </p>
           </div>
         </TabPanel>
-        <TabPanel header="Vercel"></TabPanel>
+        <TabPanel header="Vercel">
+          <div className="py-3 md:px-5 text-center md:text-left  text-lg">
+            <p>
+              <span className="text-txtColor">vercel.json</span>
+            </p>
+            <p>
+              When the site is an express project you need to add a file called{" "}
+              <span className="text-txtColor">vercel.json</span> with this.
+            </p>
+            <Clipboard
+              rows={17}
+              defaultValue={`{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}`}
+            />
+          </div>
+        </TabPanel>
       </TabView>
     </div>
   )
